@@ -47,6 +47,21 @@ export default {
   },
 
   providers: {
+    apple: {
+      name: "apple",
+      url: "/auth/apple",
+      authorizationEndpoint: "https://appleid.apple.com/auth/authorize",
+      redirectUri: window.location.origin + "/",
+      requiredUrlParams: ["scope"],
+      scope: ["name", "email"],
+      scopeDelimiter: "%20",
+      display: "popup",
+      oauthType: "2.0",
+      popupOptions: {
+        width: 460,
+        height: 600
+      }
+    },
     facebook: {
       name: 'facebook',
       url: '/auth/facebook',
