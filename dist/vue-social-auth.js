@@ -478,7 +478,7 @@ var defaultOptions = {
       redirectUri: window.location.origin + "/",
       requiredUrlParams: ["scope"],
       scope: ["name", "email"],
-      scopeDelimiter: "+",
+      scopeDelimiter: "%20",
       display: "popup",
       oauthType: "2.0",
       popupOptions: {
